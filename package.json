@@ -25,5 +25,8 @@
   "bugs": {
     "url": "https://github.com/IonicaBizau/image-to-ascii-cli/issues"
   },
-  "homepage": "https://github.com/IonicaBizau/image-to-ascii-cli#readme"
+  "homepage": "https://github.com/IonicaBizau/image-to-ascii-cli#readme",
+  "blah": {
+      "api": "image-to-ascii"
+  }
 }

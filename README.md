@@ -10,6 +10,8 @@ You can install the package globally and use it as command line tool:
 $ npm i -g image-to-ascii-cli
 ```
     
+:bulb: **ProTip**: If you want to use this package as module, check out [`image-to-ascii`—the API version of it](http://github.com/IonicaBizau/image-to-ascii).
+    
 
 Then, run `image-to-ascii --help` and see what the CLI tool can do.
 
