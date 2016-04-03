@@ -1,0 +1,43 @@
+#!/usr/bin/env node
+
+// Dependencies
+var ImageToAscii = require("image-to-ascii")
+  , Abs = require("abs")
+  , Logger = require("bug-killer")
+  , CLP = require("clp")
+  , Package = require("../package")
+  , IsThere = require("is-there")
+  ;
+
+// Parse the command line arguments
+var imgOpt = new CLP.Option(["i", "img"], "Image path", "path")
+  , parser = new CLP({
+        name: "CLI Image Viwer"
+      , version: Package.version
+      , exe: Package.name
+      , examples: [
+            "cli-img -i path/to/some/image.png"
+        ]
+      , docs_url: Package.homapage
+      , process: true
+    }, [
+        imgOpt
+    ])
+  , options = null
+  ;
+
+if (!imgOpt.is_provided) {
+    return console.log(parser.displayHelp());
+}
+
+if (!/^https?:\/\//.test(imgOpt.value)) {
+    imgOpt.value = Abs(imgOpt.value);
+    if (!IsThere(imgOpt.value)) {
+        return Logger.log(new Error("The image does not exist."));
+    }
+}
+
+ImageToAscii(imgOpt.value, function(err, converted) {
+    if (err) { return Logger.log(err, "error"); }
+    console.log(converted);
+});
