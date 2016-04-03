@@ -4,7 +4,7 @@
   "description": "View images in text format, in your terminal.",
   "main": "lib/index.js",
   "bin": {
-    "image-to-ascii": "./bin/image-to-ascii-cli"
+    "image-to-ascii": "./bin/image-to-ascii"
   },
   "dependencies": {
     "abs": "^1.2.1",
