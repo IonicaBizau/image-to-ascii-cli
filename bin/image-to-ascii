@@ -16,7 +16,7 @@ var imgOpt = new CLP.Option(["i", "img"], "Image path", "path")
       , version: Package.version
       , exe: Package.name
       , examples: [
-            "cli-img -i path/to/some/image.png"
+            "image-to-ascii -i path/to/some/image.png"
         ]
       , docs_url: Package.homapage
       , process: true
