@@ -26,7 +26,7 @@ Options:
   -v, --version     Displays version information.
 
 Examples:
-  cli-img -i path/to/some/image.png
+  image-to-ascii -i path/to/some/image.png
 
 ```
     
