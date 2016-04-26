@@ -1,6 +1,6 @@
 {
   "name": "image-to-ascii-cli",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "View images in text format, in your terminal.",
   "main": "lib/index.js",
   "bin": {
@@ -27,6 +27,17 @@
   },
   "homepage": "https://github.com/IonicaBizau/image-to-ascii-cli#readme",
   "blah": {
-      "api": "image-to-ascii"
-  }
+    "api": "image-to-ascii"
+  },
+  "files": [
+    "bin/",
+    "app/",
+    "lib/",
+    "dist/",
+    "src/",
+    "resources/",
+    "menu/",
+    "cli.js",
+    "index.js"
+  ]
 }
