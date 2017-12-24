@@ -1,6 +1,6 @@
 {
   "name": "image-to-ascii-cli",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "View images in text format, in your terminal.",
   "main": "lib/index.js",
   "bin": {
