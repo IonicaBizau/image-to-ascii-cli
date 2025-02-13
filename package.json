@@ -1,6 +1,6 @@
 {
   "name": "image-to-ascii-cli",
-  "version": "1.0.11",
+  "version": "1.0.12",
   "description": "View images in text format, in your terminal.",
   "main": "lib/index.js",
   "bin": {
@@ -41,6 +41,8 @@
     "menu/",
     "cli.js",
     "index.js",
+    "index.d.ts",
+    "package-lock.json",
     "bloggify.js",
     "bloggify.json",
     "bloggify/"
